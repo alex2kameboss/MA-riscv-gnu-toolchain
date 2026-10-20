@@ -1,0 +1,56 @@
+{
+    "schemaVersion": "0.9",
+    "basicInfo": {
+        "ipName": "GCC support for IMT SIMD/Vector accelerator",
+        "project": "ISOLDE",
+        "version": "v13.2-imt",
+        "license": "GPL-2.0-only",
+        "ipType": {
+            "category": [
+                "Compiler"
+            ],
+            "domain": [
+                "Other"
+            ]
+        },
+        "repositoryURL": "https://github.com/alex2kameboss/MA-riscv-gnu-toolchain",
+        "provider": [
+            {
+                "organizationName": "National Institute for Research and Development in Microtechnologies",
+                "organizationURL": "https://www.imt.ro/",
+                "organizationAlias": [
+                    "IMT"
+                ]
+            }
+        ]
+    },
+    "systemLevelInfo": {
+        "architecture": "RISC-V",
+        "processor": "CVA6",
+        "isaExtension": "custom",
+        "board": "Xilinx VCU128",
+        "SOC": "NA",
+        "SWDependencies": "None",
+        "requiresSpecializedTool": "No"
+    },
+    "interfaces": {
+        "API": [
+            "Inline assembly"
+        ],
+        "inputArtifacts": [
+            {
+                "artifact": "Source code",
+                "format": "C"
+            }
+        ],
+        "outputArtifacts": [
+            {
+                "artifact": "System image", 
+                "format": "ELF"
+            }
+        ]
+    },
+    "deployment": {
+        "bundle": "Source code"
+    }
+}
